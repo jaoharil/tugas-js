@@ -3,12 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tugas 1 JavaScript</title>
+    <style>
+      body {
+        background: rgb(238, 174, 202);
+        background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(54, 106, 167, 1) 100%);
+      }
+      .row {
+        background-image: radial-gradient(circle 311px at 8.6% 27.9%, rgba(62, 147, 252, 0.57) 12.9%, rgba(239, 183, 192, 0.44) 91.2%);
+        width: 600px;
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+      }
+      .col img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        padding: 20px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+      }
+      .col {
+        padding-top: 20px;
+        display: flex;
+        justify-content: end;
+      }
+      .ril {
+        padding-left: 100px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+        font-style: italic;
+      }
+      .tes {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+
+        width: 300px;
+        height: 100px;
+        padding-left: 20px;
+        padding-right: 30px;
+        padding-top: 10px;
+      }
+      .ahli {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+      }
+      .bio {
+        background-color: aliceblue;
+        width: 500px;
+        margin: auto;
+        width: 50%;
+        /* border: 3px solid green; */
+        padding: 10px;
+        padding-top: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
-    <script>
-      //ini adalah dokumen
-      let nama = 'jav';
-    </script>
+    <div class="row">
+      <div class="ril">
+        <!-- sebelumnya saya minta maaf kalau
+           penempatan nya salah pak, 
+           soalnya mau pake DOM takutnya enggak  di nilai soalnya belum di ajarin -->
+        <script>
+          let nama = 'jaoharil';
+          document.writeln(nama);
+        </script>
+        <div class="ahli">
+          <script>
+            let akhli = 'frontend';
+            document.writeln(akhli);
+          </script>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="tes">
+          <script>
+            let email = 'jaoharilmkanun2904@gmail.com';
+            let no = '083192923713';
+            let jk = 'laki-laki';
+            let umur = '21';
+            let alamat = 'lombok';
+            document.writeln('Email : ' + email);
+            document.writeln('<br>');
+            document.writeln('No Hp : ' + no);
+            document.writeln('<br>');
+            document.writeln('Janis Kelamin : ' + jk);
+            document.writeln('<br>');
+            document.writeln('Umur : ' + umur);
+            document.writeln('<br>');
+            document.writeln('Alamat : ' + alamat);
+          </script>
+        </div>
+        <img src="./img/jo.jpg" alt="jo" />
+      </div>
+    </div>
+    <div class="bio">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rerum est ullam nesciunt nostrum voluptates, dicta voluptatum repellendus harum amet hic animi ipsum doloremque ducimus tempore nisi consequatur cupiditate omnis,
+        veritatis repellat similique temporibus accusantium id. Dolorem incidunt animi, et possimus aperiam provident molestias ullam soluta quisquam, consectetur, nulla ratione?
+      </p>
+      <button style="color: #6eb2ef">Profil</button>
+      <button style="color: #6eb2ef">Contack Me</button>
+    </div>
   </body>
 </html>
