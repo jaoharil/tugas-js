@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas JavaScript 2</title>
+    <style>
+      body {
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let pegawai = 'Ridwan';
+      let jabatan = 'Manager';
+      let status = 'Menikah';
+      let GajiPokok = 0;
+      // if (jabatan == 'Manager') GajiPokok = 15000000;
+      // else if (jabatan == 'AsistenManager') GajiPokok = 10000000;
+      // else if (jabatan == 'Staff') GajiPokok = 5000000;
+      // else GajiPokok = 0;
+      switch (jabatan) {
+        case 'Manager':
+          GajiPokok = 15000000;
+          break;
+        case 'AsistenManager':
+          GajiPokok = 10000000;
+          break;
+        case 'Staff':
+          GajiPokok = 5000000;
+          break;
+        default:
+          GajiPokok = 0;
+      }
+
+      //tunjangang
+      let tunjangan = 0.15 * GajiPokok;
+      let bpjs = 0.11 * GajiPokok;
+
+      //tunjangan keluarga
+      let tunjkeluarga = status == 'Menikah' ? 0.21 * GajiPokok : 0;
+      let totalgaji = tunjangan + bpjs + tunjkeluarga + GajiPokok;
+
+      //cetak
+
+      document.write(
+        '<br> Pegawai : ' +
+          pegawai +
+          '<br> Jabatan : ' +
+          jabatan +
+          '<br> Status: ' +
+          status +
+          '<br> Gaji pokok : ' +
+          GajiPokok +
+          '<br> Tunjangan : ' +
+          tunjangan +
+          '<br>Bpjs : ' +
+          bpjs +
+          '<br> Tunjangan Keluarga: ' +
+          tunjkeluarga +
+          '<br> Total Gaji : ' +
+          totalgaji
+      );
+    </script>
+  </body>
+</html>
